@@ -1,18 +1,30 @@
 Imgur API Integration Application
+
 This application provides APIs to interact with the Imgur API for uploading, viewing, and deleting images after successful user authentication.
 
 Technologies Used
+
 Spring Boot
 Swagger for API testing
 MapStruct for property mapping
 Setup
-Clone the repository.
-
+Clone the repository to your local machine.
 Configure the server port to 8080 in the application.yaml file.
-
 Build and run the application.
+Building and Running the Application
+To build and run the application, use the following commands:
 
-Access Swagger UI for API testing: http://localhost:8080/swagger-ui.html#/
+Build the application using Maven:
+Copy code
+mvn clean install
+
+Run the application using Maven:
+arduino
+Copy code
+mvn spring-boot:run
+
+Once the application is running, you can access it using the following URL: http://localhost:8080
+
 
 API Endpoints
 User Registration - /user/registration (POST)
@@ -65,3 +77,5 @@ Get User Details - /user/{userName} (GET)
 
 Additional Configuration
 To configure MapStruct in Eclipse, follow the instructions provided in this link.
+
+License
