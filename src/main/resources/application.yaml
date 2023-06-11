@@ -27,6 +27,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+  kafka:
+    bootstrap-servers: <kafka-bootstrap-servers>
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
 
 imgur:
   clientId: 483ed9087ff3f01
