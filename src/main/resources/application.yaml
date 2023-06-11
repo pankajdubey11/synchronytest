@@ -1,0 +1,35 @@
+# application.yml
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: synchronyTest
+
+  profiles:
+    active: default
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+imgur:
+  clientId: 483ed9087ff3f01
+  clientSecret: 16641dd8f285836a0d31ed5ef91c29a599f35b08
+  service:
+    url: https://api.imgur.com/3
